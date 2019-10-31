@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>Button Effects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+
+<script src="jquery.min.js"></script>
+  <script type="text/javascript" src="ButtonEffectsJS.js"></script>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>Cathrine Bien-Aime</b></h1>
+    <h6>Welcome to my  <span class="w3-tag">Button Effects Project</span></h6>
+  </header>
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"> Button Effects: </h3>
+      </div>
+    <!-- show -->
+      <div class="w3-row-padding">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <button id = "show">click here to show</button>
+          <div class="w3-display-container">   
+            <div class="w3-display-topleft w3-black w3-padding">Show</div>
+            <img id= "image1" src="image1.jpg" alt="House" style="width:100%">
+          </div>
+        </div>
+        <!-- hide -->
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <button id = "hide">click here to hide</button>
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Hide</div>
+            <img id= "image2"src="image2.jpg" alt="House" style="width:100%">
+          </div>
+        </div>
+        <!-- hide/show toggle -->
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <button id = "toggle">click here twice to hide/show toggle</button>
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Toggle</div>
+            <img id= "image3" src="image3.jpg" alt="House" style="width:100%">
+          </div>
+        </div>
+        <!-- Fade out -->
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <button id = "fadeout">click here to fade out</button>
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Fade Out</div>
+            <img id= "image4" src="image4.jpg" alt="House" style="width:100%">
+          </div>
+        </div>
+      </div>
+    <!-- Fade in -->
+      <div class="w3-row-padding">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <button id = "fadein">click here to fade in</button>
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Fade In</div>
+            <img id= "image5" src="image5.jpg" alt="House" style="width:99%">
+          </div>
+        </div>
+        <!-- Slide up -->
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <button id = "slideup" >click here to slide up</button>
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Slide Up</div>
+            <img id= "image6" src="image6.jpg" alt="House" style="width:99%">
+          </div>
+        </div>
+        <!-- Slide down -->
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <button id = "slidedown">click here to slide down</button>
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Slide Down</div>
+            <img id= "image7" src="image7.jpg" alt="House" style="width:99%">
+          </div>
+        </div>
+      
+      <!-- Fade to -->
+      <div class="w3-col l3 m6 w3-margin-bottom">
+          <button id = "fadeto">click here to fade to</button>
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Fade To</div>
+          <img id= "image8" src="image8.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+    </div>
+    
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript" src="ButtonEffectsJS.js"></script>
+</body>
+</html>
+
+<!-- add click buttons or radio buttons 
+  Hide, 
+  Show, 
+  Toggle 
+  Fade Out, 
+  Fade In, 
+  Slide Up, 
+  Slide Down, 
+  Slide Toggle, 
+  Fade To. -->
